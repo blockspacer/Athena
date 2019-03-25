@@ -1,4 +1,5 @@
 #pragma once
+// #include "ath_pch.h"
 
 #ifdef ATH_PLATFORM_WINDOWS
     #ifdef ATH_BUILD_DLL
@@ -9,3 +10,5 @@
 #else
     #error Athena only support Windows!!!
 #endif
+
+#define BIT(x) (1 << x)

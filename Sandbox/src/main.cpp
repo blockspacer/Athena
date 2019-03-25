@@ -1,4 +1,5 @@
 #include <Athena.h>
+#include <spdlog/spdlog.h>
 
 class Sandbox : public ath::Application {
 public:

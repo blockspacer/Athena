@@ -6,7 +6,13 @@ extern ath::Application * ath::CreateApplication();
 
 int main(int argc, char ** argv) {
 
-	std::cout << "Gavno" << std::endl;
+	ath::Log::Init();
+
+
+
+	TRACE("Athena Bless you");
+	CORE_WARN("Hi my child");
+
 	auto app = ath::CreateApplication();
 	app->Run();
 	delete app;
