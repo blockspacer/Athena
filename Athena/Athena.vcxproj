@@ -80,16 +80,16 @@
       <PrecompiledHeaderFile>ath_pch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>ATH_BUILD_DLL;ATH_PLATFORM_WINDOWS;ATH_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
-      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <PrecompiledHeaderOutputFile>&amp;(SolutionDir)\bin\intermediate\Debug-windows-x86_64\$(TargetName)$(TargetName).pch</PrecompiledHeaderOutputFile>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImportLibrary>..\bin\Debug-windows-x86_64\Athena\Athena.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
@@ -102,20 +102,20 @@
       <PrecompiledHeaderFile>ath_pch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>ATH_BUILD_DLL;ATH_PLATFORM_WINDOWS;ATH_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <PrecompiledHeaderOutputFile>&amp;(SolutionDir)\bin\intermediate\Debug-windows-x86_64\$(TargetName)$(TargetName).pch</PrecompiledHeaderOutputFile>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImportLibrary>..\bin\Release-windows-x86_64\Athena\Athena.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
@@ -128,20 +128,20 @@
       <PrecompiledHeaderFile>ath_pch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>ATH_BUILD_DLL;ATH_PLATFORM_WINDOWS;ATH_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>src;vendor\spdlog\include;vendor\GLFW\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <MinimalRebuild>false</MinimalRebuild>
       <StringPooling>true</StringPooling>
-      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <PrecompiledHeaderOutputFile>&amp;(SolutionDir)\bin\intermediate\Debug-windows-x86_64\$(TargetName)$(TargetName).pch</PrecompiledHeaderOutputFile>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ImportLibrary>..\bin\Dist-windows-x86_64\Athena\Athena.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
@@ -149,6 +149,8 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\Athena\LayerStack.h" />
+    <ClInclude Include="src\Athena\Layer.h" />
     <ClInclude Include="src\Athena.h" />
     <ClInclude Include="src\Athena\Application.h" />
     <ClInclude Include="src\Athena\Core.h" />
@@ -158,12 +160,22 @@
     <ClInclude Include="src\Athena\Events\KeyEvent.h" />
     <ClInclude Include="src\Athena\Events\MouseEvent.h" />
     <ClInclude Include="src\Athena\Log.h" />
+    <ClInclude Include="src\Athena\Window.h" />
+    <ClInclude Include="src\Athena\WindowsWindow.h" />
     <ClInclude Include="src\Athena\ath_pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\Athena\LayerStack.cpp" />
+    <ClCompile Include="src\Athena\Layer.cpp" />
     <ClCompile Include="src\Athena\Application.cpp" />
     <ClCompile Include="src\Athena\Log.cpp" />
+    <ClCompile Include="src\Athena\WindowsWindow.cpp" />
     <ClCompile Include="src\Athena\ath_pch.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">
+      <Project>{154B857C-0182-860D-AA6E-6C109684020F}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

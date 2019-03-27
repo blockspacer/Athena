@@ -9,6 +9,12 @@ workspace "Athena"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+--include directories relative to root filter (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Athena/vendor/GLFW/include"
+
+include "Athena/vendor/GLFW"
+
 project "Athena"
 	location "Athena"
 	kind "SharedLib"
@@ -27,7 +33,13 @@ project "Athena"
 
 	includedirs {
 		"%{prj.name}/src",
-		"%{prj.name}/vendor/spdlog/include/"
+		"%{prj.name}/vendor/spdlog/include/",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links {
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
@@ -45,14 +57,17 @@ project "Athena"
 
 	filter"configurations:Debug"
 		defines "ATH_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter"configurations:Release"
 		defines "ATH_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter"configurations:Dist"
 		defines "ATH_DIST"
+		buildoptions "/MD"
 		optimize "On"
 
 project "Sandbox"
@@ -88,12 +103,15 @@ project "Sandbox"
 
 	filter"configurations:Debug"
 		defines "ATH_DEBUG"
+		buildoptions "/MDd"
 		symbols "On"
 
 	filter"configurations:Release"
 		defines "ATH_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter"configurations:Dist"
 		defines "ATH_DIST"
+		buildoptions "/MD"
 		optimize "On"

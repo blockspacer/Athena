@@ -14,6 +14,10 @@
 #include <unordered_map>
 #include <unordered_set>
 
+
+// own unchangeble headers
+#include "Log.h"
+
 #ifdef ATH_PLATFORM_WINDOWS
     #include <Windows.h>
 #endif

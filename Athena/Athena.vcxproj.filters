@@ -34,9 +34,17 @@
     <ClInclude Include="src\Athena\Log.h">
       <Filter>Athena</Filter>
     </ClInclude>
+    <ClInclude Include="src\Athena\Window.h">
+      <Filter>Athena</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Athena\WindowsWindow.h">
+      <Filter>Athena</Filter>
+    </ClInclude>
     <ClInclude Include="src\Athena\ath_pch.h">
       <Filter>Athena</Filter>
     </ClInclude>
+    <ClInclude Include="src\Athena\Layer.h" />
+    <ClInclude Include="src\Athena\LayerStack.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Athena\Application.cpp">
@@ -45,8 +53,13 @@
     <ClCompile Include="src\Athena\Log.cpp">
       <Filter>Athena</Filter>
     </ClCompile>
+    <ClCompile Include="src\Athena\WindowsWindow.cpp">
+      <Filter>Athena</Filter>
+    </ClCompile>
     <ClCompile Include="src\Athena\ath_pch.cpp">
       <Filter>Athena</Filter>
     </ClCompile>
+    <ClCompile Include="src\Athena\Layer.cpp" />
+    <ClCompile Include="src\Athena\LayerStack.cpp" />
   </ItemGroup>
 </Project>

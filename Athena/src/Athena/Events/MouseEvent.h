@@ -8,7 +8,7 @@ namespace ath {
 
 	class ATHENA_API MouseMovedEvent : public Event {
 	public:
-		MouseMovedEvent(float x, float y) {}
+		MouseMovedEvent(float x, float y) : m_MouseX(x), m_MouseY(y) {}
 
 		inline float GetX() const { return m_MouseX; }
 		inline float GetY() const { return m_MouseY; }
