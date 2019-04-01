@@ -4,3 +4,9 @@
 [submodule "Athena/vendor/GLFW"]
 	path = Athena/vendor/GLFW
 	url = https://github.com/TheCherno/glfw
+[submodule "Athena/vendor/imgui"]
+	path = Athena/vendor/imgui
+	url = https://github.com/TheCherno/imgui
+[submodule "Athena/vendor/glm"]
+	path = Athena/vendor/glm
+	url = https://github.com/g-truc/glm

@@ -12,8 +12,13 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 --include directories relative to root filter (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "Athena/vendor/GLFW/include"
+IncludeDir["Glad"] = "Athena/vendor/Glad/include"
+IncludeDir["ImGui"] = "Athena/vendor/imgui"
+IncludeDir["glm"] = "Athena/vendor/glm"
 
 include "Athena/vendor/GLFW"
+include "Athena/vendor/Glad"
+include "Athena/vendor/imgui"
 
 project "Athena"
 	location "Athena"
@@ -28,27 +33,35 @@ project "Athena"
 
 	files {
 		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/src/**.cpp",
+		"%{prj.name}/vendor/glm/glm/**.hpp",
+		"%{prj.name}/vendor/glm/glm/**.inl"
 	}
 
 	includedirs {
 		"%{prj.name}/src",
+		"%{prj.name}/src/Athena/",
 		"%{prj.name}/vendor/spdlog/include/",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}",
+		"%{IncludeDir.ImGui}",
+		"%{IncludeDir.glm}"
 	}
 
 	links {
 		"GLFW",
+		"Glad",
+		"ImGui",
 		"opengl32.lib"
 	}
 
 	filter "system:windows"
 		cppdialect "C++17"
-		staticruntime "On"
 		systemversion "latest"
 		defines {
 			"ATH_BUILD_DLL",
-			"ATH_PLATFORM_WINDOWS"
+			"ATH_PLATFORM_WINDOWS",
+			"GLFW_INCLUDE_NONE"
 		}
 
 	postbuildcommands{
@@ -89,7 +102,8 @@ project "Sandbox"
 
 	includedirs {
 		"Athena/vendor/spdlog/include",
-		"Athena/src"
+		"Athena/src",
+		"%{IncludeDir.glm}"
 	}
 
 	filter "system:windows"

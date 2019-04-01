@@ -1,5 +1,4 @@
 #include <Athena.h>
-#include <spdlog/spdlog.h>
 
 class ExampleLayer : public ath::Layer {
 public:
@@ -8,11 +7,17 @@ public:
 	}
 
 	void OnUpdate() override {
-		INFO("ExampleLayer::Update");
+		if (ath::Input::IsKeyPressed(ATH_KEY_ENTER))
+			TRACE("Tab key is pressed (poll)!");
 	}
 
 	void OnEvent(ath::Event& event) override {
-		TRACE("{0}", event);
+		if (event.GetEventType() == ath::EventType::KeyPressed) {
+			ath::KeyPressedEvent& e = (ath::KeyPressedEvent&)event;
+			if (e.GetKeyCode() == 10)
+				TRACE("Tab key is pressed (event)!");
+			TRACE("{0}", (char)e.GetKeyCode());
+		} //else TRACE("ANOTHER EVENT {0}", event);
 	}
 
 };

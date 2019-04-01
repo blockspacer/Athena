@@ -1,27 +1,12 @@
 #pragma once
 
-#include "Athena/Window.h"
+#include "Window.h"
+#include "WindowsInput.h"
 
 #include <GLFW/glfw3.h>
 
 namespace ath {
-	/*
-			using EventCallbackFn = std::function<void(Event&)>;
 
-		virtual ~Window() {}
-
-		virtual void OnUpdate() = 0;
-
-		virtual unsigned int GetWidth() const = 0;
-		virtual unsigned int GetHeight() const = 0;
-
-		// Window attributes
-		virtual void SetEventCallback(const EventCallbackFn& callback) = 0;
-		virtual void SetVSync(bool enabled) = 0;
-		virtual bool IsVSync() const = 0;
-
-		static Window* Create(const WindowProps& props = WindowProps());
-	*/
 	class WindowsWindow : public Window {
 	public:
 		WindowsWindow(const WindowProps& props);
@@ -36,6 +21,9 @@ namespace ath {
 		inline void SetEventCallback(const EventCallbackFn& callback) override { m_Data.EventCallback = callback; }
 		void SetVSync(bool enabled) override;
 		bool IsVSync() const override;
+
+
+		inline virtual void* GetNativeWindow() const { return m_Window; }
 	private:
 		virtual void Init(const WindowProps& props);
 		virtual void Shutdown();
