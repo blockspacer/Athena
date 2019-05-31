@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Athena/Core.h"
+#include "Core.h"
 #include "Layer.h"
 
 namespace ath {

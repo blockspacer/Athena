@@ -45,6 +45,7 @@ project "Athena"
 		"%{IncludeDir.GLFW}",
 		"%{IncludeDir.Glad}",
 		"%{IncludeDir.ImGui}",
+		"%{IncludeDir.assimp}",
 		"%{IncludeDir.glm}"
 	}
 
@@ -65,7 +66,8 @@ project "Athena"
 		}
 
 	postbuildcommands{
-		("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox" )
+		("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Sandbox" ),
+		("{COPY} %{cfg.buildtarget.relpath} ../bin/" .. outputdir .. "/Trailer" )
 	}
 
 	filter"configurations:Debug"

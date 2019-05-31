@@ -1,0 +1,368 @@
+﻿Environment at start of build:
+ALLUSERSPROFILE = C:\ProgramData
+APPDATA = C:\Users\MindTitan\AppData\Roaming
+CommonProgramFiles = C:\Program Files (x86)\Common Files
+CommonProgramFiles(x86) = C:\Program Files (x86)\Common Files
+CommonProgramW6432 = C:\Program Files\Common Files
+COMPUTERNAME = DESKTOP-6G3BCKR
+ComSpec = C:\WINDOWS\system32\cmd.exe
+DriverData = C:\Windows\System32\Drivers\DriverData
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+FPS_BROWSER_USER_PROFILE_STRING = Default
+HOMEDRIVE = C:
+HOMEPATH = \Users\MindTitan
+INTELGTDEBUGGERROOT = C:\Intel\OpenCL\debugger\
+INTELOCLPATH = C:\Intel\OpenCL\sdk\bin\x64;C:\Intel\OpenCL\sdk\bin\x86
+INTELOCLSDKROOT = C:\Intel\OpenCL\sdk\
+LOCALAPPDATA = C:\Users\MindTitan\AppData\Local
+LOGONSERVER = \\DESKTOP-6G3BCKR
+MSBuildLoadMicrosoftTargetsReadOnly = true
+MSMPI_BIN = C:\Program Files\Microsoft MPI\Bin\
+NUMBER_OF_PROCESSORS = 4
+NVIDIAWHITELISTED = 0x01
+OneDrive = C:\Users\MindTitan\OneDrive
+OneDriveConsumer = C:\Users\MindTitan\OneDrive
+OS = Windows_NT
+Path = C:\Windows\System32\DriverStore\FileRepository\igdlh64.inf_amd64_463164d40c3d26ce\;C:\Intel\OpenCL\sdk\bin\x64;C:\Intel\OpenCL\sdk\bin\x86;C:\Intel\OpenCL\sdk\bin\Pin;C:\Intel\OpenCL\sdk\bin\GTPin;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;E:\Program Files\Microsoft VS Code\bin;C:\Program Files\nodejs\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\PostgreSQL\pg11\bin;C:\Program Files\Git\cmd;C:\MinGW\bin;C:\Users\MindTitan\AppData\Local\Microsoft\WindowsApps;C:\Users\MindTitan\AppData\Local\atom\bin;C:\Program Files\Java\jdk1.8.0_144\bin;C:\Users\MindTitan\AppData\Local\Microsoft\WindowsApps;C:\Users\MindTitan\AppData\Roaming\npm;C:\MinGW\bin;C:\Program Files\CMake\bin
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+PkgDefApplicationConfigFile = C:\Users\MindTitan\AppData\Local\Microsoft\VisualStudio\15.0_33ab4b4e\devenv.exe.config
+PROCESSOR_ARCHITECTURE = x86
+PROCESSOR_ARCHITEW6432 = AMD64
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 158 Stepping 9, GenuineIntel
+PROCESSOR_LEVEL = 6
+PROCESSOR_REVISION = 9e09
+ProgramData = C:\ProgramData
+ProgramFiles = C:\Program Files (x86)
+ProgramFiles(x86) = C:\Program Files (x86)
+ProgramW6432 = C:\Program Files
+PSModulePath = %ProgramFiles%\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\PowerShell\Modules\
+PUBLIC = C:\Users\Public
+SHIM_MCCOMPAT = 0x810000001
+SystemDrive = C:
+SystemRoot = C:\WINDOWS
+TEMP = C:\Users\MINDTI~1\AppData\Local\Temp
+TMP = C:\Users\MINDTI~1\AppData\Local\Temp
+USERDOMAIN = DESKTOP-6G3BCKR
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-6G3BCKR
+USERNAME = MindTitan
+USERPROFILE = C:\Users\MindTitan
+VBOX_MSI_INSTALL_PATH = C:\Program Files\Oracle\VirtualBox\
+VisualStudioDir = E:\Documents\Visual Studio 2017
+VisualStudioEdition = Microsoft Visual Studio Community 2017
+VisualStudioVersion = 15.0
+VSAPPIDDIR = C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\
+VSAPPIDNAME = devenv.exe
+VSLANG = 1033
+VSSKUEDITION = Community
+windir = C:\WINDOWS
+
+  Building Custom Rule C:/dev/Athena/Athena/vendor/assimp-4.0.1/code/CMakeLists.txt
+  CMake does not need to re-run because C:/dev/Athena/build/code/CMakeFiles/generate.stamp is up-to-date.
+  Assimp.cpp
+  BaseImporter.cpp
+  BaseProcess.cpp
+  PostStepRegistry.cpp
+  ImporterRegistry.cpp
+  DefaultIOStream.cpp
+  DefaultIOSystem.cpp
+  CInterfaceIOWrapper.cpp
+  Importer.cpp
+  SGSpatialSort.cpp
+  VertexTriangleAdjacency.cpp
+  SpatialSort.cpp
+  SceneCombiner.cpp
+  ScenePreprocessor.cpp
+  SkeletonMeshBuilder.cpp
+  SplitByBoneCountProcess.cpp
+  StandardShapes.cpp
+  TargetAnimation.cpp
+  RemoveComments.cpp
+  Subdivision.cpp
+  scene.cpp
+  Bitmap.cpp
+  Version.cpp
+  CreateAnimMesh.cpp
+  DefaultLogger.cpp
+  Exporter.cpp
+  AssimpCExport.cpp
+  CalcTangentsProcess.cpp
+  ComputeUVMappingProcess.cpp
+  ConvertToLHProcess.cpp
+  FindDegenerates.cpp
+  FindInstancesProcess.cpp
+  FindInvalidDataProcess.cpp
+  FixNormalsStep.cpp
+  GenFaceNormalsProcess.cpp
+  GenVertexNormalsProcess.cpp
+  PretransformVertices.cpp
+  ImproveCacheLocality.cpp
+  JoinVerticesProcess.cpp
+  LimitBoneWeightsProcess.cpp
+  RemoveRedundantMaterials.cpp
+  RemoveVCProcess.cpp
+  SortByPTypeProcess.cpp
+  SplitLargeMeshes.cpp
+  TextureTransform.cpp
+  TriangulateProcess.cpp
+  ValidateDataStructure.cpp
+  OptimizeGraph.cpp
+  OptimizeMeshes.cpp
+  DeboneProcess.cpp
+  ProcessHelper.cpp
+  MakeVerboseFormat.cpp
+  MaterialSystem.cpp
+  StepExporter.cpp
+  AMFImporter.cpp
+  AMFImporter_Geometry.cpp
+  AMFImporter_Material.cpp
+  AMFImporter_Postprocess.cpp
+  3DSConverter.cpp
+  3DSLoader.cpp
+  3DSExporter.cpp
+  ACLoader.cpp
+  ASELoader.cpp
+  ASEParser.cpp
+  AssbinExporter.cpp
+  AssbinLoader.cpp
+  AssxmlExporter.cpp
+  B3DImporter.cpp
+  BVHLoader.cpp
+  ColladaLoader.cpp
+  ColladaParser.cpp
+  ColladaExporter.cpp
+  DXFLoader.cpp
+  CSMLoader.cpp
+  HMPLoader.cpp
+  IRRMeshLoader.cpp
+  IRRShared.cpp
+  IRRLoader.cpp
+  LWOAnimation.cpp
+  LWOBLoader.cpp
+  LWOLoader.cpp
+  LWOMaterial.cpp
+  LWSLoader.cpp
+  MD2Loader.cpp
+  MD3Loader.cpp
+  MD5Loader.cpp
+  MD5Parser.cpp
+  MDCLoader.cpp
+  MDLLoader.cpp
+  MDLMaterialLoader.cpp
+  NFFLoader.cpp
+  NDOLoader.cpp
+  OFFLoader.cpp
+  ObjFileImporter.cpp
+  ObjFileMtlImporter.cpp
+  ObjFileParser.cpp
+  ObjExporter.cpp
+  OgreImporter.cpp
+  OgreStructs.cpp
+  OgreBinarySerializer.cpp
+  OgreXmlSerializer.cpp
+  OgreMaterial.cpp
+  OpenGEXExporter.cpp
+  OpenGEXImporter.cpp
+  PlyLoader.cpp
+  PlyParser.cpp
+  PlyExporter.cpp
+  MS3DLoader.cpp
+  COBLoader.cpp
+  BlenderLoader.cpp
+  BlenderDNA.cpp
+  BlenderScene.cpp
+  BlenderModifier.cpp
+  BlenderBMesh.cpp
+  BlenderTessellator.cpp
+  IFCLoader.cpp
+  IFCUtil.cpp
+  IFCGeometry.cpp
+  IFCMaterial.cpp
+  IFCProfile.cpp
+  IFCCurve.cpp
+  IFCBoolean.cpp
+  IFCOpenings.cpp
+  STEPFileReader.cpp
+  STEPFileEncoding.cpp
+  XGLLoader.cpp
+  FBXImporter.cpp
+  FBXParser.cpp
+  FBXTokenizer.cpp
+  FBXConverter.cpp
+  FBXUtil.cpp
+  FBXDocument.cpp
+  FBXProperties.cpp
+  FBXMeshGeometry.cpp
+  FBXMaterial.cpp
+  FBXModel.cpp
+  FBXAnimation.cpp
+  FBXNodeAttribute.cpp
+  FBXDeformer.cpp
+  FBXBinaryTokenizer.cpp
+  FBXDocumentUtil.cpp
+  Q3DLoader.cpp
+  Q3BSPFileParser.cpp
+  Q3BSPFileImporter.cpp
+  Q3BSPZipArchive.cpp
+  RawLoader.cpp
+  SIBImporter.cpp
+  SMDLoader.cpp
+  STLLoader.cpp
+  STLExporter.cpp
+  TerragenLoader.cpp
+  UnrealLoader.cpp
+  XFileImporter.cpp
+  XFileParser.cpp
+  XFileExporter.cpp
+  X3DExporter.cpp
+  X3DImporter.cpp
+  X3DImporter_Geometry2D.cpp
+  X3DImporter_Geometry3D.cpp
+  X3DImporter_Group.cpp
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\algorithm(1441): error C2678: binary '!=': no operator found which takes a left-hand operand of type '_Iter' (or there is no acceptable conversion)
+          with
+          [
+              _Iter=Assimp::WordIterator
+          ] (compiling source file C:\dev\Athena\Athena\vendor\assimp-4.0.1\code\X3DImporter.cpp)
+  C:\dev\Athena\Athena\vendor\assimp-4.0.1\code\X3DImporter.cpp(99): note: could be 'bool Assimp::WordIterator::operator !=(Assimp::WordIterator &) const'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\system_error(306): note: or       'bool std::operator !=(const std::error_condition &,const std::error_condition &) noexcept' (compiling source file C:\dev\Athena\Athena\vendor\assimp-4.0.1\code\X3DImporter.cpp)
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\system_error(301): note: or       'bool std::operator !=(const std::error_condition &,const std::error_code &) noexcept' (compiling source file C:\dev\Athena\Athena\vendor\assimp-4.0.1\code\X3DImporter.cpp)
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\system_error(296): note: or       'bool std::operator !=(const std::error_code &,const std::error_condition &) noexcept' (compiling source file C:\dev\Athena\Athena\vendor\assimp-4.0.1\code\X3DImporter.cpp)
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\system_error(291): note: or       'bool std::operator !=(const std::error_code &,const std::error_code &) noexcept' (compiling source file C:\dev\Athena\Athena\vendor\assimp-4.0.1\code\X3DImporter.cpp)
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\exception(346): note: or       'bool std::operator !=(const std::exception_ptr &,std::nullptr_t) noexcept' (compiling source file C:\dev\Athena\Athena\vendor\assimp-4.0.1\code\X3DImporter.cpp)
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\exception(341): note: or       'bool std::operator !=(std::nullptr_t,const std::exception_ptr &) noexcept' (compiling source file C:\dev\Athena\Athena\vendor\assimp-4.0.1\code\X3DImporter.cpp)
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\exception(336): note: or       'bool std::operator !=(const std::exception_ptr &,const std::exception_ptr &) noexcept' (compiling source file C:\dev\Athena\Athena\vendor\assimp-4.0.1\code\X3DImporter.cpp)
+  X3DImporter_Light.cpp
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\algorithm(1441): note: while trying to match the argument list '(_Iter, const _Iter)'
+          with
+          [
+              _Iter=Assimp::WordIterator
+          ] (compiling source file C:\dev\Athena\Athena\vendor\assimp-4.0.1\code\X3DImporter.cpp)
+  C:\dev\Athena\Athena\vendor\assimp-4.0.1\code\X3DImporter.cpp(521): note: see reference to function template instantiation '_OutIt std::transform<Assimp::WordIterator,std::back_insert_iterator<std::vector<bool,std::allocator<_Ty>>>,Assimp::X3DImporter::XML_ReadNode_GetAttrVal_AsArrB::<lambda_3145083e03eaafd48c6a047a895900c1>>(const _InIt,const _InIt,_OutIt,_Fn)' being compiled
+          with
+          [
+              _OutIt=std::back_insert_iterator<std::vector<bool,std::allocator<bool>>>,
+              _Ty=bool,
+              _InIt=Assimp::WordIterator,
+              _Fn=Assimp::X3DImporter::XML_ReadNode_GetAttrVal_AsArrB::<lambda_3145083e03eaafd48c6a047a895900c1>
+          ]
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\algorithm(1441): error C2088: '!=': illegal for struct (compiling source file C:\dev\Athena\Athena\vendor\assimp-4.0.1\code\X3DImporter.cpp)
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\algorithm(1443): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data (compiling source file C:\dev\Athena\Athena\vendor\assimp-4.0.1\code\X3DImporter.cpp)
+  X3DImporter_Metadata.cpp
+  X3DImporter_Networking.cpp
+  X3DImporter_Postprocess.cpp
+  X3DImporter_Rendering.cpp
+  X3DImporter_Shape.cpp
+  X3DImporter_Texturing.cpp
+  FIReader.cpp
+  X3DVocabulary.cpp
+  glTFImporter.cpp
+  glTFExporter.cpp
+  D3MFImporter.cpp
+  D3MFOpcPackage.cpp
+  MMDImporter.cpp
+  MMDPmxParser.cpp
+C:\dev\Athena\Athena\vendor\assimp-4.0.1\code\MMDImporter.cpp(121): warning C4244: 'initializing': conversion from 'std::streamoff' to 'size_t', possible loss of data
+C:\dev\Athena\Athena\vendor\assimp-4.0.1\code\MMDImporter.cpp(281): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\dev\Athena\Athena\vendor\assimp-4.0.1\code\MMDImporter.cpp(298): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  shapes.cc
+  advancing_front.cc
+  cdt.cc
+  sweep.cc
+  sweep_context.cc
+  clipper.cpp
+  OpenDDLParser.cpp
+  DDLNode.cpp
+  OpenDDLCommon.cpp
+  OpenDDLExport.cpp
+  Value.cpp
+  OpenDDLStream.cpp
+  o3dgcArithmeticCodec.cpp
+  o3dgcDynamicVectorDecoder.cpp
+  o3dgcDynamicVectorEncoder.cpp
+  o3dgcTools.cpp
+  o3dgcTriangleFans.cpp
+
+Project Performance Summary:
+        0 ms  C:\dev\Athena\build\ZERO_CHECK.vcxproj     2 calls
+                  0 ms  GetTargetPath                              1 calls
+                  0 ms  GetNativeManifest                          1 calls
+        0 ms  C:\dev\Athena\build\contrib\zlib\zlibstatic.vcxproj   2 calls
+                  0 ms  GetTargetPath                              1 calls
+                  0 ms  GetNativeManifest                          1 calls
+        0 ms  C:\dev\Athena\build\contrib\irrXML\IrrXML.vcxproj   2 calls
+                  0 ms  GetTargetPath                              1 calls
+                  0 ms  GetNativeManifest                          1 calls
+    57482 ms  C:\dev\Athena\build\code\assimp.vcxproj    1 calls
+              57482 ms  Build                                      1 calls
+
+Target Performance Summary:
+        0 ms  ResolveReferences                          1 calls
+        0 ms  _HandlePackageFileConflicts                1 calls
+        0 ms  ResolveAssemblyReferences                  1 calls
+        0 ms  AfterResolveReferences                     1 calls
+        0 ms  SelectClCompile                            1 calls
+        0 ms  BuildGenerateSources                       1 calls
+        0 ms  BuildGenerateSourcesTraverse               1 calls
+        0 ms  BeforeBuildGenerateSources                 1 calls
+        0 ms  PreBuildEvent                              1 calls
+        0 ms  ExpandSDKReferences                        1 calls
+        0 ms  _SelectedFiles                             1 calls
+        0 ms  ComputeCustomBuildOutput                   1 calls
+        0 ms  _BuildGenerateSourcesAction                1 calls
+        0 ms  CopyFileToFolders                          1 calls
+        0 ms  _Xsd                                       1 calls
+        0 ms  MakeDirsForMidl                            1 calls
+        0 ms  ComputeMIDLGeneratedCompileInputs          1 calls
+        0 ms  AfterMidl                                  1 calls
+        0 ms  _Midl                                      1 calls
+        0 ms  SelectCustomBuild                          1 calls
+        0 ms  AfterBuildGenerateSources                  1 calls
+        0 ms  ResolveSDKReferences                       1 calls
+        0 ms  SetCABuildNativeEnvironmentVariables       1 calls
+        0 ms  SetTelemetryEnvironmentVariables           1 calls
+        0 ms  _PrepareForBuild                           1 calls
+        0 ms  BeforeResolveReferences                    1 calls
+        0 ms  AssignProjectConfiguration                 1 calls
+        0 ms  PrepareProjectReferences                   1 calls
+        0 ms  ComputeCLInputPDBName                      1 calls
+        0 ms  GetTargetPath                              2 calls
+        0 ms  _RemoveNameMetadataFromProjectReferenceItems   1 calls
+        0 ms  GetFrameworkPaths                          1 calls
+        0 ms  GetReferenceAssemblyPaths                  1 calls
+        0 ms  BeforeClCompile                            1 calls
+        0 ms  GetResolvedWinMD                           1 calls
+        0 ms  PlatformPrepareForBuild                    1 calls
+        0 ms  GetNativeManifest                          2 calls
+        0 ms  AfterBuildGenerateSourcesEvent             1 calls
+        1 ms  _GetProjectReferenceTargetFrameworkProperties   1 calls
+        1 ms  _CheckWindowsSDKInstalled                  1 calls
+        1 ms  _PrepareForReferenceResolution             1 calls
+        1 ms  BuildCompileTraverse                       1 calls
+        1 ms  ComputeReferenceCLInput                    1 calls
+        1 ms  _CheckForInvalidConfigurationAndPlatform   1 calls
+        1 ms  _SplitProjectReferencesByFileExistence     1 calls
+        1 ms  SetBuildDefaultEnvironmentVariables        1 calls
+        2 ms  InitializeBuildStatus                      1 calls
+        2 ms  MakeDirsForCl                              1 calls
+        3 ms  PrepareForBuild                            1 calls
+        3 ms  FixupCLCompileOptions                      1 calls
+        8 ms  ResolveProjectReferences                   1 calls
+       32 ms  WarnCompileDuplicatedFilename              1 calls
+       89 ms  CustomBuild                                1 calls
+    57321 ms  ClCompile                                  1 calls
+
+Task Performance Summary:
+        0 ms  Message                                    2 calls
+        0 ms  SetEnv                                     8 calls
+        0 ms  AssignProjectConfiguration                 1 calls
+        0 ms  ResolvePackageFileConflicts                1 calls
+        0 ms  ReadLinesFromFile                          1 calls
+        0 ms  GetOutOfDateItems                          2 calls
+        0 ms  Delete                                     1 calls
+        1 ms  Touch                                      1 calls
+        1 ms  WriteLinesToFile                           1 calls
+        1 ms  ResolveNonMSBuildProjectOutput             1 calls
+        2 ms  MakeDir                                    5 calls
+        7 ms  MSBuild                                    2 calls
+       89 ms  CustomBuild                                1 calls
+    57297 ms  CL                                         1 calls

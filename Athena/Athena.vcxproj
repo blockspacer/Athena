@@ -1,9 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
     <ProjectConfiguration Include="Debug|x64">
       <Configuration>Debug</Configuration>
       <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dist|Win32">
+      <Configuration>Dist</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release|x64">
       <Configuration>Release</Configuration>
@@ -28,7 +40,19 @@
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
@@ -40,16 +64,31 @@
     <CharacterSet>Unicode</CharacterSet>
     <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Dist|Win32'" Label="PropertySheets">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
@@ -60,12 +99,22 @@
     <TargetName>Athena</TargetName>
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>Athena</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\bin\Release-windows-x86_64\Athena\</OutDir>
     <IntDir>..\bin\intermediate\Release-windows-x86_64\Athena\</IntDir>
     <TargetName>Athena</TargetName>
     <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>Athena</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -74,13 +123,18 @@
     <TargetName>Athena</TargetName>
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|Win32'">
+    <TargetName>Athena</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>ath_pch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>ATH_BUILD_DLL;ATH_PLATFORM_WINDOWS;GLFW_INCLUDE_NONE;ATH_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;src\Athena;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;vendor\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\Athena\Athena\vendor\spdlog\include;$(SolutionDir)Athena\vendor\Glad\include;$(SolutionDir)Athena\vendor\glm;$(SolutionDir)Athena\src\Athena;$(SolutionDir)src;$(SolutionDir)src\Athena;$(SolutionDir)vendor\spdlog\include;$(SolutionDir)vendor\GLFW\include;$(SolutionDir)vendor\Glad\include;$(SolutionDir)vendor\imgui;$(SolutionDir)..;$(SolutionDir)vendor\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <AdditionalOptions>/MDd %(AdditionalOptions)</AdditionalOptions>
@@ -93,7 +147,31 @@
       <ImportLibrary>..\bin\Debug-windows-x86_64\Athena\Athena.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>IF EXIST ..\bin\Debug-windows-x86_64\Athena\Athena.dll\ (xcopy /Q /E /Y /I ..\bin\Debug-windows-x86_64\Athena\Athena.dll ..\bin\Debug-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Debug-windows-x86_64\Athena\Athena.dll ..\bin\Debug-windows-x86_64\Sandbox &gt; nul)</Command>
+      <Command>IF EXIST ..\bin\Debug-windows-x86_64\Athena\Athena.dll\ (xcopy /Q /E /Y /I ..\bin\Debug-windows-x86_64\Athena\Athena.dll ..\bin\Debug-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Debug-windows-x86_64\Athena\Athena.dll ..\bin\Debug-windows-x86_64\Sandbox &gt; nul)
+IF EXIST ..\bin\Debug-windows-x86_64\Athena\Athena.dll\ (xcopy /Q /E /Y /I ..\bin\Debug-windows-x86_64\Athena\Athena.dll ..\bin\Debug-windows-x86_64\Trailer &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Debug-windows-x86_64\Athena\Athena.dll ..\bin\Debug-windows-x86_64\Trailer &gt; nul)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ath_pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>ATH_BUILD_DLL;ATH_PLATFORM_WINDOWS;GLFW_INCLUDE_NONE;ATH_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\dev\Athena\Athena\vendor\spdlog\include;$(SolutionDir)Athena\vendor\Glad\include;$(SolutionDir)Athena\vendor\glm;$(SolutionDir)Athena\src\Athena;$(SolutionDir)src;$(SolutionDir)src\Athena;$(SolutionDir)vendor\spdlog\include;$(SolutionDir)vendor\GLFW\include;$(SolutionDir)vendor\Glad\include;$(SolutionDir)vendor\imgui;$(SolutionDir)..;$(SolutionDir)vendor\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <AdditionalOptions>/MDd %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>..\bin\Debug-windows-x86_64\Athena\Athena.lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>IF EXIST ..\bin\Debug-windows-x86_64\Athena\Athena.dll\ (xcopy /Q /E /Y /I ..\bin\Debug-windows-x86_64\Athena\Athena.dll ..\bin\Debug-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Debug-windows-x86_64\Athena\Athena.dll ..\bin\Debug-windows-x86_64\Sandbox &gt; nul)
+IF EXIST ..\bin\Debug-windows-x86_64\Athena\Athena.dll\ (xcopy /Q /E /Y /I ..\bin\Debug-windows-x86_64\Athena\Athena.dll ..\bin\Debug-windows-x86_64\Trailer &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Debug-windows-x86_64\Athena\Athena.dll ..\bin\Debug-windows-x86_64\Trailer &gt; nul)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -102,7 +180,7 @@
       <PrecompiledHeaderFile>ath_pch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>ATH_BUILD_DLL;ATH_PLATFORM_WINDOWS;GLFW_INCLUDE_NONE;ATH_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;src\Athena;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;vendor\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\Athena\Athena\vendor\spdlog\include;$(SolutionDir)Athena\vendor\Glad\include;$(SolutionDir)Athena\vendor\glm;$(SolutionDir)Athena\src\Athena;$(SolutionDir)src;$(SolutionDir)src\Athena;$(SolutionDir)vendor\spdlog\include;$(SolutionDir)vendor\GLFW\include;$(SolutionDir)vendor\Glad\include;$(SolutionDir)vendor\imgui;$(SolutionDir)..;$(SolutionDir)vendor\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -119,7 +197,35 @@
       <ImportLibrary>..\bin\Release-windows-x86_64\Athena\Athena.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>IF EXIST ..\bin\Release-windows-x86_64\Athena\Athena.dll\ (xcopy /Q /E /Y /I ..\bin\Release-windows-x86_64\Athena\Athena.dll ..\bin\Release-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Release-windows-x86_64\Athena\Athena.dll ..\bin\Release-windows-x86_64\Sandbox &gt; nul)</Command>
+      <Command>IF EXIST ..\bin\Release-windows-x86_64\Athena\Athena.dll\ (xcopy /Q /E /Y /I ..\bin\Release-windows-x86_64\Athena\Athena.dll ..\bin\Release-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Release-windows-x86_64\Athena\Athena.dll ..\bin\Release-windows-x86_64\Sandbox &gt; nul)
+IF EXIST ..\bin\Release-windows-x86_64\Athena\Athena.dll\ (xcopy /Q /E /Y /I ..\bin\Release-windows-x86_64\Athena\Athena.dll ..\bin\Release-windows-x86_64\Trailer &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Release-windows-x86_64\Athena\Athena.dll ..\bin\Release-windows-x86_64\Trailer &gt; nul)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ath_pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>ATH_BUILD_DLL;ATH_PLATFORM_WINDOWS;GLFW_INCLUDE_NONE;ATH_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\dev\Athena\Athena\vendor\spdlog\include;$(SolutionDir)Athena\vendor\Glad\include;$(SolutionDir)Athena\vendor\glm;$(SolutionDir)Athena\src\Athena;$(SolutionDir)src;$(SolutionDir)src\Athena;$(SolutionDir)vendor\spdlog\include;$(SolutionDir)vendor\GLFW\include;$(SolutionDir)vendor\Glad\include;$(SolutionDir)vendor\imgui;$(SolutionDir)..;$(SolutionDir)vendor\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>..\bin\Release-windows-x86_64\Athena\Athena.lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>IF EXIST ..\bin\Release-windows-x86_64\Athena\Athena.dll\ (xcopy /Q /E /Y /I ..\bin\Release-windows-x86_64\Athena\Athena.dll ..\bin\Release-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Release-windows-x86_64\Athena\Athena.dll ..\bin\Release-windows-x86_64\Sandbox &gt; nul)
+IF EXIST ..\bin\Release-windows-x86_64\Athena\Athena.dll\ (xcopy /Q /E /Y /I ..\bin\Release-windows-x86_64\Athena\Athena.dll ..\bin\Release-windows-x86_64\Trailer &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Release-windows-x86_64\Athena\Athena.dll ..\bin\Release-windows-x86_64\Trailer &gt; nul)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
@@ -128,7 +234,7 @@
       <PrecompiledHeaderFile>ath_pch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>ATH_BUILD_DLL;ATH_PLATFORM_WINDOWS;GLFW_INCLUDE_NONE;ATH_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>src;src\Athena;vendor\spdlog\include;vendor\GLFW\include;vendor\Glad\include;vendor\imgui;vendor\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\Athena\Athena\vendor\spdlog\include;$(SolutionDir)Athena\vendor\Glad\include;$(SolutionDir)Athena\vendor\glm;$(SolutionDir)Athena\src\Athena;$(SolutionDir)src;$(SolutionDir)src\Athena;$(SolutionDir)vendor\spdlog\include;$(SolutionDir)vendor\GLFW\include;$(SolutionDir)vendor\Glad\include;$(SolutionDir)vendor\imgui;$(SolutionDir)..;$(SolutionDir)vendor\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -145,7 +251,35 @@
       <ImportLibrary>..\bin\Dist-windows-x86_64\Athena\Athena.lib</ImportLibrary>
     </Link>
     <PostBuildEvent>
-      <Command>IF EXIST ..\bin\Dist-windows-x86_64\Athena\Athena.dll\ (xcopy /Q /E /Y /I ..\bin\Dist-windows-x86_64\Athena\Athena.dll ..\bin\Dist-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Dist-windows-x86_64\Athena\Athena.dll ..\bin\Dist-windows-x86_64\Sandbox &gt; nul)</Command>
+      <Command>IF EXIST ..\bin\Dist-windows-x86_64\Athena\Athena.dll\ (xcopy /Q /E /Y /I ..\bin\Dist-windows-x86_64\Athena\Athena.dll ..\bin\Dist-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Dist-windows-x86_64\Athena\Athena.dll ..\bin\Dist-windows-x86_64\Sandbox &gt; nul)
+IF EXIST ..\bin\Dist-windows-x86_64\Athena\Athena.dll\ (xcopy /Q /E /Y /I ..\bin\Dist-windows-x86_64\Athena\Athena.dll ..\bin\Dist-windows-x86_64\Trailer &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Dist-windows-x86_64\Athena\Athena.dll ..\bin\Dist-windows-x86_64\Trailer &gt; nul)</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>ath_pch.h</PrecompiledHeaderFile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>ATH_BUILD_DLL;ATH_PLATFORM_WINDOWS;GLFW_INCLUDE_NONE;ATH_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\dev\Athena\Athena\vendor\spdlog\include;$(SolutionDir)Athena\vendor\Glad\include;$(SolutionDir)Athena\vendor\glm;$(SolutionDir)Athena\src\Athena;$(SolutionDir)src;$(SolutionDir)src\Athena;$(SolutionDir)vendor\spdlog\include;$(SolutionDir)vendor\GLFW\include;$(SolutionDir)vendor\Glad\include;$(SolutionDir)vendor\imgui;$(SolutionDir)..;$(SolutionDir)vendor\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <AdditionalOptions>/MD %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>..\bin\Dist-windows-x86_64\Athena\Athena.lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>IF EXIST ..\bin\Dist-windows-x86_64\Athena\Athena.dll\ (xcopy /Q /E /Y /I ..\bin\Dist-windows-x86_64\Athena\Athena.dll ..\bin\Dist-windows-x86_64\Sandbox &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Dist-windows-x86_64\Athena\Athena.dll ..\bin\Dist-windows-x86_64\Sandbox &gt; nul)
+IF EXIST ..\bin\Dist-windows-x86_64\Athena\Athena.dll\ (xcopy /Q /E /Y /I ..\bin\Dist-windows-x86_64\Athena\Athena.dll ..\bin\Dist-windows-x86_64\Trailer &gt; nul) ELSE (xcopy /Q /Y /I ..\bin\Dist-windows-x86_64\Athena\Athena.dll ..\bin\Dist-windows-x86_64\Trailer &gt; nul)</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -157,7 +291,17 @@
     <ClInclude Include="src\Athena\Events\Event.h" />
     <ClInclude Include="src\Athena\Events\KeyEvent.h" />
     <ClInclude Include="src\Athena\Events\MouseEvent.h" />
-    <ClInclude Include="src\Athena\ImGui\ImGuiLayer.h" />
+    <ClInclude Include="src\Athena\Graphics\Camera.h" />
+    <ClInclude Include="src\Athena\Graphics\LightSource.h" />
+    <ClInclude Include="src\Athena\Graphics\Mesh.h" />
+    <ClInclude Include="src\Athena\Graphics\Model.h" />
+    <ClInclude Include="src\Athena\Graphics\Object.h" />
+    <ClInclude Include="src\Athena\Graphics\ObjectManipulator.h" />
+    <ClInclude Include="src\Athena\Graphics\Render.h" />
+    <ClInclude Include="src\Athena\Graphics\Shader.h" />
+    <ClInclude Include="src\Athena\Graphics\Square.h" />
+    <ClInclude Include="src\Athena\Graphics\TexturePrototype.h" />
+    <ClInclude Include="src\Athena\Graphics\stb_image.h" />
     <ClInclude Include="src\Athena\Input.h" />
     <ClInclude Include="src\Athena\KeyCodes.h" />
     <ClInclude Include="src\Athena\Layer\Layer.h" />
@@ -535,16 +679,21 @@
     <ClInclude Include="vendor\glm\glm\vector_relational.hpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Athena\Application.cpp" />
-    <ClCompile Include="src\Athena\ImGui\ImGuiBuild.cpp" />
-    <ClCompile Include="src\Athena\ImGui\ImGuiLayer.cpp" />
+    <ClCompile Include="src\Athena\EntryPoint.cpp" />
     <ClCompile Include="src\Athena\Layer\Layer.cpp" />
     <ClCompile Include="src\Athena\Layer\LayerStack.cpp" />
-    <ClCompile Include="src\Athena\Log.cpp" />
     <ClCompile Include="src\Athena\Platform\OpenGL\ImGuiOpenGLRenderer.cpp" />
     <ClCompile Include="src\Athena\Platform\Windows\WindowsInput.cpp" />
     <ClCompile Include="src\Athena\Platform\Windows\WindowsWindow.cpp" />
-    <ClCompile Include="src\Athena\ath_pch.cpp" />
+    <ClCompile Include="src\Athena\Source\Application.cpp" />
+    <ClCompile Include="src\Athena\Source\Graphics\Mesh.cpp" />
+    <ClCompile Include="src\Athena\Source\Graphics\Model.cpp" />
+    <ClCompile Include="src\Athena\Source\Graphics\Render.cpp" />
+    <ClCompile Include="src\Athena\Source\Graphics\Shader.cpp" />
+    <ClCompile Include="src\Athena\Source\Graphics\Square.cpp" />
+    <ClCompile Include="src\Athena\Source\Graphics\Texture.cpp" />
+    <ClCompile Include="src\Athena\Source\Log.cpp" />
+    <ClCompile Include="src\Athena\Source\ath_pch.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="vendor\GLFW\GLFW.vcxproj">

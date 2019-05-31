@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\CCompilerTest.c">
+      <Filter>unit</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\code\Version.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\AssimpAPITest.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utBlendImportAreaLight.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utBlendImportMaterials.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utColladaExportCamera.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utColladaExportLight.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utFastAtof.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utFindDegenerates.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utFindInvalidData.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utFixInfacingNormals.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utGenNormals.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utImporter.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utImproveCacheLocality.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utIOSystem.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utIssues.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utJoinVertices.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utLimitBoneWeights.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utMaterialSystem.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utMatrix3x3.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utMatrix4x4.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utPretransformVertices.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utRemoveComments.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utRemoveComponent.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utRemoveRedundantMaterials.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utScenePreprocessor.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utSharedPPData.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utStringUtils.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utSortByPType.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utSplitLargeMeshes.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utTargetAnimation.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utTextureTransform.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utTriangulate.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\unit\utVertexTriangleAdjacency.cpp">
+      <Filter>tests</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1E3718F9-F24D-3685-B46A-F1D2BBD0D50E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="tests">
+      <UniqueIdentifier>{66A17EC6-D358-3540-B2A4-F00F6D3DE9D7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="unit">
+      <UniqueIdentifier>{A1D1C9D6-4009-358B-854D-F36D9ED0F7B8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

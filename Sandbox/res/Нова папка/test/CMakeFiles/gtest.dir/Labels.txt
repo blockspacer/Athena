@@ -1,0 +1,13 @@
+# Target labels
+ gtest
+# Source files and their labels
+C:/dev/Athena/Sandbox/res/Нова папка/test/CMakeFiles/gtest
+C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/2292d60cda60178f402bd6c2324da069/gtest.rule
+C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/df6bd92d11310e1d743ddeb9b7635e33/gtest-complete.rule
+C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/aa0f70b6532b131ebec1f512ac353496/gtest-install.rule
+C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/aa0f70b6532b131ebec1f512ac353496/gtest-mkdir.rule
+C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/aa0f70b6532b131ebec1f512ac353496/gtest-download.rule
+C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/aa0f70b6532b131ebec1f512ac353496/gtest-update.rule
+C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/aa0f70b6532b131ebec1f512ac353496/gtest-patch.rule
+C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/aa0f70b6532b131ebec1f512ac353496/gtest-configure.rule
+C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/aa0f70b6532b131ebec1f512ac353496/gtest-build.rule

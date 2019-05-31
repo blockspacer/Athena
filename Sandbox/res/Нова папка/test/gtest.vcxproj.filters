@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\Athena\Sandbox\res\Нова папка\CMakeFiles\aa0f70b6532b131ebec1f512ac353496\gtest-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\Athena\Sandbox\res\Нова папка\CMakeFiles\aa0f70b6532b131ebec1f512ac353496\gtest-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\Athena\Sandbox\res\Нова папка\CMakeFiles\aa0f70b6532b131ebec1f512ac353496\gtest-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\Athena\Sandbox\res\Нова папка\CMakeFiles\aa0f70b6532b131ebec1f512ac353496\gtest-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\Athena\Sandbox\res\Нова папка\CMakeFiles\aa0f70b6532b131ebec1f512ac353496\gtest-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\Athena\Sandbox\res\Нова папка\CMakeFiles\aa0f70b6532b131ebec1f512ac353496\gtest-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\Athena\Sandbox\res\Нова папка\CMakeFiles\aa0f70b6532b131ebec1f512ac353496\gtest-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\Athena\Sandbox\res\Нова папка\CMakeFiles\df6bd92d11310e1d743ddeb9b7635e33\gtest-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\Athena\Sandbox\res\Нова папка\CMakeFiles\2292d60cda60178f402bd6c2324da069\gtest.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\dev\Athena\Sandbox\res\models\assimp-3.3.1\test\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\dev\Athena\Sandbox\res\Нова папка\test\CMakeFiles\gtest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{AC8CA719-9A26-38AE-8149-CC8A866D4EB3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

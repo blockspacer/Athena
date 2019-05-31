@@ -1,7 +1,7 @@
 #pragma once
 
-#include "Athena/Core.h"
-#include "Athena/Events/Event.h"
+#include "Core.h"
+#include "Events/Event.h"
 
 namespace ath {
 

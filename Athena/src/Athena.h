@@ -8,7 +8,6 @@
 
 // dependencies
 #include "Athena/Log.h"
-#include "Athena/ImGui/ImGuiLayer.h"
 
 
 #include "Athena/Input.h"

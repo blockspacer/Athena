@@ -1,0 +1,13 @@
+# Target labels
+ gtest
+# Source files and their labels
+C:/dev/Athena/Sandbox/res/models/build/test/CMakeFiles/gtest
+C:/dev/Athena/Sandbox/res/models/build/CMakeFiles/e008d2e078ecfea6a8c3feb2b48ff3f2/gtest.rule
+C:/dev/Athena/Sandbox/res/models/build/CMakeFiles/dce1b9e90aaa1712fda87bb8c9b3f8fc/gtest-complete.rule
+C:/dev/Athena/Sandbox/res/models/build/CMakeFiles/48f4ab12269d9d31cabb82adba94490a/gtest-install.rule
+C:/dev/Athena/Sandbox/res/models/build/CMakeFiles/48f4ab12269d9d31cabb82adba94490a/gtest-mkdir.rule
+C:/dev/Athena/Sandbox/res/models/build/CMakeFiles/48f4ab12269d9d31cabb82adba94490a/gtest-download.rule
+C:/dev/Athena/Sandbox/res/models/build/CMakeFiles/48f4ab12269d9d31cabb82adba94490a/gtest-update.rule
+C:/dev/Athena/Sandbox/res/models/build/CMakeFiles/48f4ab12269d9d31cabb82adba94490a/gtest-patch.rule
+C:/dev/Athena/Sandbox/res/models/build/CMakeFiles/48f4ab12269d9d31cabb82adba94490a/gtest-configure.rule
+C:/dev/Athena/Sandbox/res/models/build/CMakeFiles/48f4ab12269d9d31cabb82adba94490a/gtest-build.rule

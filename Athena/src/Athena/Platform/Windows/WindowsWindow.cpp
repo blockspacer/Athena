@@ -1,16 +1,22 @@
 #include "ath_pch.h"
 #include "WindowsWindow.h"
 
-#include "Athena/Events/ApplicationEvent.h"
-#include "Athena/Events/KeyEvent.h"
-#include "Athena/Events/MouseEvent.h"
+#include "Events/ApplicationEvent.h"
+#include "Events/KeyEvent.h"
+#include "Events/MouseEvent.h"
+
+#include "Graphics/Camera.h"
+#include "Graphics/ObjectManipulator.h"
 
 #include <glad/glad.h>
 
 namespace ath {
 
 	static bool s_GLFWInitialized = false;
-
+	void errorLogger(GLenum source, GLenum type, GLuint id, GLenum severity, GLsizei length, const GLchar* message, const void* userParam) {
+		CORE_ERROR("[ ERROR ] : ", message);
+	}
+	
 	static void GLFWErrorCallback(int error, const char * description) {
 		CORE_ERROR("GLFW Error ({0}) : {1}", error, description);
 	}
@@ -48,11 +54,16 @@ namespace ath {
 		int status = gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
 		ATH_CORE_ASSERT(status, "Failed to initialize Glad!");
 
+		// tell GLFW to capture our mouse
+		glfwSetInputMode(m_Window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+		//glDebugMessageCallback(errorLogger, nullptr);
+
 		glfwSetWindowUserPointer(m_Window, &m_Data);
 		SetVSync(true);
 
-		// Set GLFW callbacks
+		/// we will set camera operations into callbacks
 
+		// Set GLFW callbacks
 		glfwSetWindowSizeCallback(m_Window, [](GLFWwindow * window, int width, int height) {
 			WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
 			
@@ -61,6 +72,8 @@ namespace ath {
 
 			WindowResizeEvent event(width, height);
 			data.EventCallback(event);
+
+			Camera::getInstance().SynchronizeWindowsSize(width, height);
 		});
 
 		glfwSetWindowCloseCallback(m_Window, [](GLFWwindow * window) {
@@ -72,6 +85,9 @@ namespace ath {
 		glfwSetKeyCallback(m_Window, [](GLFWwindow * window, int key, int scancode, int action, int mods) {
 			WindowData& data = *(WindowData*)glfwGetWindowUserPointer(window);
 			
+			Camera::getInstance().move(key);
+			ObjectManipulator::getInstance().reactToUserKeyBoardInput(key);
+
 			switch (action) {
 				case GLFW_PRESS: {
 					KeyPressedEvent event(key, 0);
@@ -120,6 +136,8 @@ namespace ath {
 			
 			MouseScrolledEvent event((float)xOffset, (float)yOffset);
 			data.EventCallback(event);
+
+			Camera::getInstance().ProcessMouseScroll(yOffset);
 		});
 
 		glfwSetCursorPosCallback(m_Window, [](GLFWwindow * window, double xPos, double yPos) {
@@ -127,6 +145,8 @@ namespace ath {
 			
 			MouseMovedEvent event((float)xPos, (float)yPos);
 			data.EventCallback(event);
+
+			Camera::getInstance().reactToMouseMove(xPos, yPos);
 		});
 	}
 

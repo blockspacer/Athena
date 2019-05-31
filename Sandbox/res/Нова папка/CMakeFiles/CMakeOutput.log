@@ -1,0 +1,495 @@
+The system is: Windows - 10.0.17134 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 15.05.2019 21:21:02.
+Project "C:\dev\Athena\Sandbox\res\���� �����\CMakeFiles\3.13.2\CompilerIdC\CompilerIdC.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdC.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdC.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TC /analyze- /FC /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\dev\Athena\Sandbox\res\���� �����\CMakeFiles\3.13.2\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdC.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
+Done Building Project "C:\dev\Athena\Sandbox\res\���� �����\CMakeFiles\3.13.2\CompilerIdC\CompilerIdC.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.73
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/3.13.2/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/MinGW/bin/g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 15.05.2019 21:21:03.
+Project "C:\dev\Athena\Sandbox\res\���� �����\CMakeFiles\3.13.2\CompilerIdCXX\CompilerIdCXX.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "Debug\".
+  Creating directory "Debug\CompilerIdCXX.tlog\".
+InitializeBuildStatus:
+  Creating "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /analyze- /FC /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\dev\Athena\Sandbox\res\���� �����\CMakeFiles\3.13.2\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\Hostx86\x86\cl.exe
+FinalizeBuildStatus:
+  Deleting file "Debug\CompilerIdCXX.tlog\unsuccessfulbuild".
+  Touching "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
+Done Building Project "C:\dev\Athena\Sandbox\res\���� �����\CMakeFiles\3.13.2\CompilerIdCXX\CompilerIdCXX.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.72
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/3.13.2/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_21337.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 15.05.2019 21:21:04.
+Project "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\cmTC_21337.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_21337.dir\Debug\".
+  Creating directory "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_21337.dir\Debug\cmTC_21337.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_21337.dir\Debug\cmTC_21337.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_21337.dir\Debug\\" /Fd"cmTC_21337.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\testCCompiler.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_21337.dir\Debug\\" /Fd"cmTC_21337.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\testCCompiler.c"
+  testCCompiler.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\cmTC_21337.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/dev/Athena/Sandbox/res/Ќ®ў  Ї ЇЄ /CMakeFiles/CMakeTmp/Debug/cmTC_21337.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/dev/Athena/Sandbox/res/Ќ®ў  Ї ЇЄ /CMakeFiles/CMakeTmp/Debug/cmTC_21337.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_21337.dir\Debug\testCCompiler.obj
+  cmTC_21337.vcxproj -> C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\cmTC_21337.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_21337.dir\Debug\cmTC_21337.tlog\unsuccessfulbuild".
+  Touching "cmTC_21337.dir\Debug\cmTC_21337.tlog\cmTC_21337.lastbuildstate".
+Done Building Project "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\cmTC_21337.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.26
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_04fb1.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 15.05.2019 21:21:06.
+Project "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\cmTC_04fb1.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_04fb1.dir\Debug\".
+  Creating directory "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_04fb1.dir\Debug\cmTC_04fb1.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_04fb1.dir\Debug\cmTC_04fb1.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_04fb1.dir\Debug\\" /Fd"cmTC_04fb1.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCCompilerABI.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_04fb1.dir\Debug\\" /Fd"cmTC_04fb1.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCCompilerABI.c"
+  CMakeCCompilerABI.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\cmTC_04fb1.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/dev/Athena/Sandbox/res/Ќ®ў  Ї ЇЄ /CMakeFiles/CMakeTmp/Debug/cmTC_04fb1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/dev/Athena/Sandbox/res/Ќ®ў  Ї ЇЄ /CMakeFiles/CMakeTmp/Debug/cmTC_04fb1.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_04fb1.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_04fb1.vcxproj -> C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\cmTC_04fb1.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_04fb1.dir\Debug\cmTC_04fb1.tlog\unsuccessfulbuild".
+  Touching "cmTC_04fb1.dir\Debug\cmTC_04fb1.tlog\cmTC_04fb1.lastbuildstate".
+Done Building Project "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\cmTC_04fb1.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.00
+
+
+
+
+Detecting C [] compiler features compiled with the following output:
+Change Dir: C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_ae6ae.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 15.05.2019 21:21:07.
+Project "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\cmTC_ae6ae.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_ae6ae.dir\Debug\".
+  Creating directory "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_ae6ae.dir\Debug\cmTC_ae6ae.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_ae6ae.dir\Debug\cmTC_ae6ae.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ae6ae.dir\Debug\\" /Fd"cmTC_ae6ae.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\feature_tests.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ae6ae.dir\Debug\\" /Fd"cmTC_ae6ae.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\feature_tests.c"
+  feature_tests.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\cmTC_ae6ae.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/dev/Athena/Sandbox/res/Ќ®ў  Ї ЇЄ /CMakeFiles/CMakeTmp/Debug/cmTC_ae6ae.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/dev/Athena/Sandbox/res/Ќ®ў  Ї ЇЄ /CMakeFiles/CMakeTmp/Debug/cmTC_ae6ae.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_ae6ae.dir\Debug\feature_tests.obj
+  cmTC_ae6ae.vcxproj -> C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\cmTC_ae6ae.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_ae6ae.dir\Debug\cmTC_ae6ae.tlog\unsuccessfulbuild".
+  Touching "cmTC_ae6ae.dir\Debug\cmTC_ae6ae.tlog\cmTC_ae6ae.lastbuildstate".
+Done Building Project "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\cmTC_ae6ae.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.79
+
+
+    Feature record: C_FEATURE:1c_function_prototypes
+    Feature record: C_FEATURE:1c_variadic_macros
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_b467d.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 15.05.2019 21:21:08.
+Project "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\cmTC_b467d.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_b467d.dir\Debug\".
+  Creating directory "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_b467d.dir\Debug\cmTC_b467d.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_b467d.dir\Debug\cmTC_b467d.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b467d.dir\Debug\\" /Fd"cmTC_b467d.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_b467d.dir\Debug\\" /Fd"cmTC_b467d.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  testCXXCompiler.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\cmTC_b467d.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/dev/Athena/Sandbox/res/Ќ®ў  Ї ЇЄ /CMakeFiles/CMakeTmp/Debug/cmTC_b467d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/dev/Athena/Sandbox/res/Ќ®ў  Ї ЇЄ /CMakeFiles/CMakeTmp/Debug/cmTC_b467d.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_b467d.dir\Debug\testCXXCompiler.obj
+  cmTC_b467d.vcxproj -> C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\cmTC_b467d.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_b467d.dir\Debug\cmTC_b467d.tlog\unsuccessfulbuild".
+  Touching "cmTC_b467d.dir\Debug\cmTC_b467d.tlog\cmTC_b467d.lastbuildstate".
+Done Building Project "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\cmTC_b467d.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.81
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_9aa6a.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 15.05.2019 21:21:09.
+Project "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\cmTC_9aa6a.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_9aa6a.dir\Debug\".
+  Creating directory "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_9aa6a.dir\Debug\cmTC_9aa6a.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_9aa6a.dir\Debug\cmTC_9aa6a.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_9aa6a.dir\Debug\\" /Fd"cmTC_9aa6a.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXCompilerABI.cpp"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_9aa6a.dir\Debug\\" /Fd"cmTC_9aa6a.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\Program Files\CMake\share\cmake-3.13\Modules\CMakeCXXCompilerABI.cpp"
+  CMakeCXXCompilerABI.cpp
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\cmTC_9aa6a.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/dev/Athena/Sandbox/res/Ќ®ў  Ї ЇЄ /CMakeFiles/CMakeTmp/Debug/cmTC_9aa6a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/dev/Athena/Sandbox/res/Ќ®ў  Ї ЇЄ /CMakeFiles/CMakeTmp/Debug/cmTC_9aa6a.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_9aa6a.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_9aa6a.vcxproj -> C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\cmTC_9aa6a.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_9aa6a.dir\Debug\cmTC_9aa6a.tlog\unsuccessfulbuild".
+  Touching "cmTC_9aa6a.dir\Debug\cmTC_9aa6a.tlog\cmTC_9aa6a.lastbuildstate".
+Done Building Project "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\cmTC_9aa6a.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.81
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_29860.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 15.05.2019 21:21:10.
+Project "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\cmTC_29860.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_29860.dir\Debug\".
+  Creating directory "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_29860.dir\Debug\cmTC_29860.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_29860.dir\Debug\cmTC_29860.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_29860.dir\Debug\\" /Fd"cmTC_29860.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\feature_tests.cxx"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_29860.dir\Debug\\" /Fd"cmTC_29860.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\feature_tests.cxx"
+  feature_tests.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\cmTC_29860.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/dev/Athena/Sandbox/res/Ќ®ў  Ї ЇЄ /CMakeFiles/CMakeTmp/Debug/cmTC_29860.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/dev/Athena/Sandbox/res/Ќ®ў  Ї ЇЄ /CMakeFiles/CMakeTmp/Debug/cmTC_29860.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_29860.dir\Debug\feature_tests.obj
+  cmTC_29860.vcxproj -> C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\cmTC_29860.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_29860.dir\Debug\cmTC_29860.tlog\unsuccessfulbuild".
+  Touching "cmTC_29860.dir\Debug\cmTC_29860.tlog\cmTC_29860.lastbuildstate".
+Done Building Project "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\cmTC_29860.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.91
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_0053d.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 15.05.2019 21:21:12.
+Project "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\cmTC_0053d.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_0053d.dir\Debug\".
+  Creating directory "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_0053d.dir\Debug\cmTC_0053d.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_0053d.dir\Debug\cmTC_0053d.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0053d.dir\Debug\\" /Fd"cmTC_0053d.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_0053d.dir\Debug\\" /Fd"cmTC_0053d.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\cmTC_0053d.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/dev/Athena/Sandbox/res/Ќ®ў  Ї ЇЄ /CMakeFiles/CMakeTmp/Debug/cmTC_0053d.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/dev/Athena/Sandbox/res/Ќ®ў  Ї ЇЄ /CMakeFiles/CMakeTmp/Debug/cmTC_0053d.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_0053d.dir\Debug\CheckIncludeFile.obj
+  cmTC_0053d.vcxproj -> C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\cmTC_0053d.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_0053d.dir\Debug\cmTC_0053d.tlog\unsuccessfulbuild".
+  Touching "cmTC_0053d.dir\Debug\cmTC_0053d.tlog\cmTC_0053d.lastbuildstate".
+Done Building Project "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\cmTC_0053d.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.74
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_aa3b0.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 15.05.2019 21:21:13.
+Project "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\cmTC_aa3b0.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_aa3b0.dir\Debug\".
+  Creating directory "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_aa3b0.dir\Debug\cmTC_aa3b0.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_aa3b0.dir\Debug\cmTC_aa3b0.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_aa3b0.dir\Debug\\" /Fd"cmTC_aa3b0.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_aa3b0.dir\Debug\\" /Fd"cmTC_aa3b0.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\cmTC_aa3b0.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/dev/Athena/Sandbox/res/Ќ®ў  Ї ЇЄ /CMakeFiles/CMakeTmp/Debug/cmTC_aa3b0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/dev/Athena/Sandbox/res/Ќ®ў  Ї ЇЄ /CMakeFiles/CMakeTmp/Debug/cmTC_aa3b0.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_aa3b0.dir\Debug\CheckIncludeFile.obj
+  cmTC_aa3b0.vcxproj -> C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\cmTC_aa3b0.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_aa3b0.dir\Debug\cmTC_aa3b0.tlog\unsuccessfulbuild".
+  Touching "cmTC_aa3b0.dir\Debug\cmTC_aa3b0.tlog\cmTC_aa3b0.lastbuildstate".
+Done Building Project "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\cmTC_aa3b0.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.80
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: C:/dev/Athena/Sandbox/res/Нова папка/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:/Program Files (x86)/Microsoft Visual Studio/2017/Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_67397.vcxproj" "/p:Configuration=Debug" "/p:Platform=Win32" "/p:VisualStudioVersion=15.0"
+Microsoft (R) Build Engine version 15.9.21+g9802d43bc3 for .NET Framework
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Build started 15.05.2019 21:21:14.
+Project "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\cmTC_67397.vcxproj" on node 1 (default targets).
+PrepareForBuild:
+  Creating directory "cmTC_67397.dir\Debug\".
+  Creating directory "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\".
+  Creating directory "cmTC_67397.dir\Debug\cmTC_67397.tlog\".
+InitializeBuildStatus:
+  Creating "cmTC_67397.dir\Debug\cmTC_67397.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_67397.dir\Debug\\" /Fd"cmTC_67397.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  Microsoft (R) C/C++ Optimizing Compiler Version 19.16.27030.1 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_67397.dir\Debug\\" /Fd"cmTC_67397.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+  CheckIncludeFile.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\cmTC_67397.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/dev/Athena/Sandbox/res/Ќ®ў  Ї ЇЄ /CMakeFiles/CMakeTmp/Debug/cmTC_67397.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/dev/Athena/Sandbox/res/Ќ®ў  Ї ЇЄ /CMakeFiles/CMakeTmp/Debug/cmTC_67397.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_67397.dir\Debug\CheckIncludeFile.obj
+  cmTC_67397.vcxproj -> C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\Debug\cmTC_67397.exe
+FinalizeBuildStatus:
+  Deleting file "cmTC_67397.dir\Debug\cmTC_67397.tlog\unsuccessfulbuild".
+  Touching "cmTC_67397.dir\Debug\cmTC_67397.tlog\cmTC_67397.lastbuildstate".
+Done Building Project "C:\dev\Athena\Sandbox\res\Ќ®ў  Ї ЇЄ \CMakeFiles\CMakeTmp\cmTC_67397.vcxproj" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.86
+
+

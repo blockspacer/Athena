@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.13/Modules/CheckCSourceCompiles.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CheckTypeSize.cmake
+C:/dev/Athena/Athena/vendor/assimp-4.0.1/contrib/zlib/CMakeLists.txt
+C:/dev/Athena/Athena/vendor/assimp-4.0.1/contrib/zlib/zconf.h.cmakein
+C:/dev/Athena/Athena/vendor/assimp-4.0.1/contrib/zlib/zlib.pc.cmakein

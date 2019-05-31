@@ -10,8 +10,8 @@
     <Filter Include="src\Athena\Events">
       <UniqueIdentifier>{314C4D5D-9D62-4BF3-E6D9-D614522F1C7B}</UniqueIdentifier>
     </Filter>
-    <Filter Include="src\Athena\ImGui">
-      <UniqueIdentifier>{D7BF1603-C3B8-3555-ECEA-1ADAD8421561}</UniqueIdentifier>
+    <Filter Include="src\Athena\Graphics">
+      <UniqueIdentifier>{CDAF3481-3911-128F-C27E-58412EDF484E}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\Athena\Layer">
       <UniqueIdentifier>{79474703-6540-6655-8E72-4BDA7ACA4561}</UniqueIdentifier>
@@ -24,6 +24,12 @@
     </Filter>
     <Filter Include="src\Athena\Platform\Windows">
       <UniqueIdentifier>{1B1FCF6B-872C-FD51-1013-F93C7C1FC908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Athena\Source">
+      <UniqueIdentifier>{4DAE7F7D-B9C4-7D13-023C-09356E914E9B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Athena\Source\Graphics">
+      <UniqueIdentifier>{2DDD249D-19ED-D06D-82A6-358C6ED5BF06}</UniqueIdentifier>
     </Filter>
     <Filter Include="vendor">
       <UniqueIdentifier>{B3738122-9F15-ACF8-88D0-BF4C74113349}</UniqueIdentifier>
@@ -72,8 +78,38 @@
     <ClInclude Include="src\Athena\Events\MouseEvent.h">
       <Filter>src\Athena\Events</Filter>
     </ClInclude>
-    <ClInclude Include="src\Athena\ImGui\ImGuiLayer.h">
-      <Filter>src\Athena\ImGui</Filter>
+    <ClInclude Include="src\Athena\Graphics\Camera.h">
+      <Filter>src\Athena\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Athena\Graphics\LightSource.h">
+      <Filter>src\Athena\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Athena\Graphics\Mesh.h">
+      <Filter>src\Athena\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Athena\Graphics\Model.h">
+      <Filter>src\Athena\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Athena\Graphics\Object.h">
+      <Filter>src\Athena\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Athena\Graphics\ObjectManipulator.h">
+      <Filter>src\Athena\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Athena\Graphics\Render.h">
+      <Filter>src\Athena\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Athena\Graphics\Shader.h">
+      <Filter>src\Athena\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Athena\Graphics\Square.h">
+      <Filter>src\Athena\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Athena\Graphics\TexturePrototype.h">
+      <Filter>src\Athena\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Athena\Graphics\stb_image.h">
+      <Filter>src\Athena\Graphics</Filter>
     </ClInclude>
     <ClInclude Include="src\Athena\Input.h">
       <Filter>src\Athena</Filter>
@@ -1202,20 +1238,14 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Athena\Application.cpp">
+    <ClCompile Include="src\Athena\EntryPoint.cpp">
       <Filter>src\Athena</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Athena\ImGui\ImGuiLayer.cpp">
-      <Filter>src\Athena\ImGui</Filter>
     </ClCompile>
     <ClCompile Include="src\Athena\Layer\Layer.cpp">
       <Filter>src\Athena\Layer</Filter>
     </ClCompile>
     <ClCompile Include="src\Athena\Layer\LayerStack.cpp">
       <Filter>src\Athena\Layer</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Athena\Log.cpp">
-      <Filter>src\Athena</Filter>
     </ClCompile>
     <ClCompile Include="src\Athena\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
       <Filter>src\Athena\Platform\OpenGL</Filter>
@@ -1226,9 +1256,32 @@
     <ClCompile Include="src\Athena\Platform\Windows\WindowsWindow.cpp">
       <Filter>src\Athena\Platform\Windows</Filter>
     </ClCompile>
-    <ClCompile Include="src\Athena\ath_pch.cpp">
-      <Filter>src\Athena</Filter>
+    <ClCompile Include="src\Athena\Source\Application.cpp">
+      <Filter>src\Athena\Source</Filter>
     </ClCompile>
-    <ClCompile Include="src\Athena\ImGui\ImGuiBuild.cpp" />
+    <ClCompile Include="src\Athena\Source\Graphics\Mesh.cpp">
+      <Filter>src\Athena\Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Athena\Source\Graphics\Model.cpp">
+      <Filter>src\Athena\Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Athena\Source\Graphics\Render.cpp">
+      <Filter>src\Athena\Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Athena\Source\Graphics\Shader.cpp">
+      <Filter>src\Athena\Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Athena\Source\Graphics\Square.cpp">
+      <Filter>src\Athena\Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Athena\Source\Graphics\Texture.cpp">
+      <Filter>src\Athena\Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Athena\Source\Log.cpp">
+      <Filter>src\Athena\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Athena\Source\ath_pch.cpp">
+      <Filter>src\Athena\Source</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

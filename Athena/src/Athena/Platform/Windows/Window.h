@@ -2,10 +2,13 @@
 
 #include "ath_pch.h"
 
-#include "Athena/Core.h"
-#include "Athena/Events/Event.h"
+#include "Core.h"
+#include "Events/Event.h"
 
 namespace ath {
+
+	#define ATH_INITIAL_WIDTH  1280
+    #define ATH_INITIAL_HEIGHT 720
 
 	struct WindowProps {
 		std::string Title;
@@ -13,8 +16,8 @@ namespace ath {
 		unsigned int Height;
 
 		WindowProps(const std::string& title = "Athena Engine",
-			unsigned int width = 1280,
-			unsigned int height = 720)
+			unsigned int width = ATH_INITIAL_WIDTH,
+			unsigned int height = ATH_INITIAL_HEIGHT)
 			: Title(title), Width(width), Height(height) {
 		}
 	};

@@ -2,27 +2,26 @@
 #include "Core.h"
 #include "Input.h"
 
-#include "Athena/Layer/Layer.h"
-#include "Athena/Layer/LayerStack.h"
+#include "Layer/Layer.h"
+#include "Layer/LayerStack.h"
 
 #include "Events/Event.h"
-#include "Athena/Events/ApplicationEvent.h"
-#include "Athena/Events/KeyEvent.h"
-#include "Athena/Events/MouseEvent.h"
+#include "Events/ApplicationEvent.h"
+#include "Events/KeyEvent.h"
+#include "Events/MouseEvent.h"
 
 #include "Platform/Windows/Window.h"
 
-#include "Athena/ImGui/ImGuiLayer.h" 
 
-
+#include <functional>
 
 namespace ath {
 	class ATHENA_API Application {
 	public:
-		Application();
+		Application(); 
 		virtual ~Application();
 
-		void Run();
+		virtual void Run();
 
 		void OnEvent(Event&);
 
@@ -32,11 +31,11 @@ namespace ath {
 		inline static Application& Get() { return *s_Instance; }
 		
 		inline Window& GetWindow() { return *m_Window; }
+		void virtual Exit();
 	private:
 		bool OnWindowClose(WindowCloseEvent& e);
-	private:
+	protected:
 		std::unique_ptr<Window> m_Window;
-		ImGuiLayer * m_ImGuiLayer;
 		bool m_Running = true;
 		LayerStack m_LayerStack;
 	private:

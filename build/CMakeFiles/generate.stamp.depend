@@ -1,0 +1,44 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeParseImplicitLinkInfo.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CheckFunctionExists.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CheckIncludeFile.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/CheckTypeSize.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/Compiler/MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/FindOpenGL.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/FindOpenMP.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/FindPkgConfig.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.13/Modules/Platform/WindowsPaths.cmake
+C:/dev/Athena/Athena/vendor/assimp-4.0.1/CMakeLists.txt
+C:/dev/Athena/Athena/vendor/assimp-4.0.1/assimp-config-version.cmake.in
+C:/dev/Athena/Athena/vendor/assimp-4.0.1/assimp-config.cmake.in
+C:/dev/Athena/Athena/vendor/assimp-4.0.1/assimp.pc.in
+C:/dev/Athena/Athena/vendor/assimp-4.0.1/cmake-modules/FindDevIL.cmake
+C:/dev/Athena/Athena/vendor/assimp-4.0.1/cmake-modules/FindDirectX.cmake
+C:/dev/Athena/Athena/vendor/assimp-4.0.1/cmake-modules/FindPkgMacros.cmake
+C:/dev/Athena/Athena/vendor/assimp-4.0.1/cmake-modules/FindZLIB.cmake
+C:/dev/Athena/Athena/vendor/assimp-4.0.1/cmake-modules/PrecompiledHeader.cmake
+C:/dev/Athena/Athena/vendor/assimp-4.0.1/cmake-modules/cmake_uninstall.cmake.in
+C:/dev/Athena/Athena/vendor/assimp-4.0.1/include/assimp/config.h.in
+C:/dev/Athena/Athena/vendor/assimp-4.0.1/revision.h.in
+C:/dev/Athena/build/CMakeFiles/3.13.2/CMakeCCompiler.cmake
+C:/dev/Athena/build/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake
+C:/dev/Athena/build/CMakeFiles/3.13.2/CMakeRCCompiler.cmake
+C:/dev/Athena/build/CMakeFiles/3.13.2/CMakeSystem.cmake

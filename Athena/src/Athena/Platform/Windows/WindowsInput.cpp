@@ -1,7 +1,7 @@
 #include "ath_pch.h"
 #include "WindowsInput.h"
 
-#include "Athena/Application.h"
+#include "Application.h"
 #include <GLFW/glfw3.h>
 
 namespace ath {
@@ -14,6 +14,11 @@ namespace ath {
 		return state == GLFW_PRESS || state == GLFW_REPEAT;
 	}
 
+	bool WindowsInput::IsKeyReleasedImpl(int keycode) {
+		auto window = static_cast<GLFWwindow*>(Application::Get().GetWindow().GetNativeWindow());
+		return glfwGetKey(window, keycode) == GLFW_RELEASE;
+	}
+
 	bool WindowsInput::IsMouseButtonPressedImpl(int button) {
 		auto window = static_cast<GLFWwindow*>(Application::Get().GetWindow().GetNativeWindow());
 		auto state = glfwGetMouseButton(window, button);
@@ -24,7 +29,7 @@ namespace ath {
 		auto window = static_cast<GLFWwindow*>(Application::Get().GetWindow().GetNativeWindow());
 		double xpos, ypos;
 		glfwGetCursorPos(window, &xpos, &ypos);
-
+		
 		return { (float)xpos, (float)ypos };
 	}
 
